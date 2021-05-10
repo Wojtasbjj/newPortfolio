@@ -90,7 +90,6 @@ section.about-me {
                           linear-gradient(to right, #FD749B -13.56%, #281AC8 158.3%);
         background-origin: border-box;
         background-clip: content-box, border-box;
-        margin: 4em 0 4em 0;
 
         img {
             width: 40%;
@@ -148,6 +147,12 @@ section.about-me {
 
     .container-right {
         display: none
+    }
+
+    section.about-me {
+        .container-about-me {
+            margin: -4em 0 4em 0;
+        }
     }
 
 }
