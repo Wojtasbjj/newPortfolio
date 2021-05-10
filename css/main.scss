@@ -26,9 +26,6 @@ body {
                     a {
                         text-decoration: none;
                         font-weight: bold;
-                        &:hover {
-                            color: #d1d1d1;
-                        }
                     }
                 }
             }
@@ -187,6 +184,9 @@ section.portfolio {
 
                     a {
                         color: white;
+                        &:hover {
+                            color: #eeeded;
+                        }
                     }
                 }
             }

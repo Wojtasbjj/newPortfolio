@@ -31,10 +31,6 @@ body {
   font-weight: bold;
 }
 
-.navbar .container nav ul li a:hover {
-  color: #d1d1d1;
-}
-
 section.hero {
   background-image: url("../assets/background.png");
   background-repeat: no-repeat;
@@ -181,6 +177,9 @@ section.portfolio .container-portfolio h1 {
   }
   .container .navigation ul li a {
     color: white;
+  }
+  .container .navigation ul li a:hover {
+    color: #eeeded;
   }
   .container-left {
     margin-top: 5em;

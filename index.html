@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
     <div class="navbar">
         <div class="container">
-            <img id="mobile-cta" src="assets/menu.svg" alt="open mobile menu">
+            <img @click=(test()) id="mobile-cta" src="assets/menu.svg" alt="open mobile menu">
             <nav class="navigation">
                 <!-- <img src="assets/exit.svg" alt="exit mobile menu"> -->
                 <ul class="primary-nav">
@@ -48,13 +50,13 @@
         </div>
     </section>
 
-        <script>
+        <!-- <script>
             const mobileBtn = document.getElementById('mobile-cta')
             nav = document.querySelector('nav')
         
             mobileBtn.addEventListener("click", () => {
                 nav.classList.toggle("show-nav")
             })
-        </script>
+        </script> -->
 </body>
 </html>
