@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;600&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat Alternates';
@@ -148,7 +152,6 @@ section.portfolio {
             .korni-left {
                 background: rgb(241, 241, 241);
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-                // box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
                 p {
                     margin-bottom: 2em;
                 }
@@ -169,11 +172,41 @@ section.portfolio {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                // box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
                 img {
                     width: 70%;
                     height: 70%;
+                }
+            }
+        }
+        .training {
+            .training-left {
+                background: linear-gradient(178.18deg, #3b4efc -13.56%, #c5c0ff 158.3%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                img {
+                    width: 70%;
+                    height: 70%;
+                }
+            }
+            .training-right {
+                background: rgb(241, 241, 241);
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                p {
+                    margin-bottom: 2em;
+                }
+                a {
+                    color: white;
+                    text-decoration: none;
+                    background: linear-gradient(178.18deg, #fd4c7e -13.56%, #1c0cc7 158.3%);
+                    border-radius: 100px;
+                    padding: 1em 2em 1em 2em;
+                    font-weight: bold;
+                    &:hover {
+                        background: linear-gradient(178.18deg, #ff7199 -13.56%, #3a2ec7 158.3%);
+                    }
                 }
             }
         }
@@ -213,11 +246,40 @@ section.portfolio {
             width: 80%;
             height: 50vh;
             margin: 0 auto;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            h3 {
+                padding-top: 2em;
+            }
         }
         .korni-right {
             width: 80%;
             height: 50vh;
             margin: 0 auto 4em auto;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+    }
+
+    .training {
+        display: block;
+        .training-left {
+            width: 80%;
+            height: 50vh;
+            margin: 0 auto;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        .training-right {
+            width: 80%;
+            height: 50vh;
+            margin: -1em auto 0 auto;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            h3 {
+                padding-top: 2em;
+            }
         }
     }
 
@@ -274,12 +336,44 @@ section.portfolio {
             height: 70vh;
             border-top-left-radius: 25px;
             border-bottom-left-radius: 25px;
+            h3 {
+                margin: 2em 0 2em 0;
+            }
+
+            p {
+                padding: 2em;
+            }
         }
         .korni-right {
             width: 40%;
             height: 70vh;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
+        }
+    }
+
+    .training {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4em;
+        .training-left {
+            width: 40%;
+            height: 70vh;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px; 
+        }
+        .training-right {
+            width: 40%;
+            height: 70vh;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            h3 {
+                margin: 2em 0 2em 0;
+            }
+
+            p {
+                padding: 2em;
+            }
         }
     }
 
