@@ -168,6 +168,12 @@ section.portfolio {
                 background: linear-gradient(178.18deg, #ff7199 -13.56%, #3a2ec7 158.3%);
                 display: flex;
                 justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 70%;
+                    height: 70%;
+                }
             }
         }
     }
@@ -263,12 +269,12 @@ section.portfolio {
         justify-content: center;
         margin-bottom: 4em;
         .korni-left {
-            width: 25%;
-            height: 50vh;
+            width: 40%;
+            height: 70vh;
         }
         .korni-right {
-            width: 25%;
-            height: 50vh;
+            width: 40%;
+            height: 70vh;
         }
     }
 
