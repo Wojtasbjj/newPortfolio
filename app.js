@@ -1,12 +1,12 @@
 Vue.createApp({
     data() {
         return {
-
+            mobileNav: false,
         }
     },
     methods: {
         test() {
-            console.log('vue works!')
+            this.mobileNav = !this.mobileNav;
         }
     }
 }).mount('.navbar')

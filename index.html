@@ -18,11 +18,22 @@
                 <ul class="primary-nav">
                     <li><a href="#about-me">About me</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#">Stack</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
+
+        <nav v-if="mobileNav" class="mobile-navigation">
+            <!-- <img src="assets/exit.svg" alt="exit mobile menu"> -->
+            <ul class="primary-nav">
+                <li><a @click="mobileNav = false" href="#about-me">About me</a></li>
+                <li><a @click="mobileNav = false" href="#portfolio">Portfolio</a></li>
+                <li><a @click="mobileNav = false" href="#stack">Stack</a></li>
+                <li><a @click="mobileNav = false" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
     </div>
 
     <section class="hero">
