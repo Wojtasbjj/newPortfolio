@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wojciech Gajda</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="https://unpkg.com/vue@next" defer></script>
     <script src="app.js" defer></script>
@@ -14,7 +14,6 @@
         <div class="container">
             <img @click=(test()) id="mobile-cta" src="assets/menu.svg" alt="open mobile menu">
             <nav class="navigation">
-                <!-- <img src="assets/exit.svg" alt="exit mobile menu"> -->
                 <ul class="primary-nav">
                     <li><a href="#about-me">About me</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -58,16 +57,17 @@
     <section id="portfolio" class="portfolio">
         <div class="container-portfolio">
             <h1>My latest work</h1>
+            <div class="korni">
+                <div class="korni-left">
+                    <h3>Blog Korniutious</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit temporibus dolorum architecto repudiandae harum provident voluptate. Repellat iusto eos earum repellendus, magnam dolorum quam mollitia natus. Dignissimos, quis. Consectetur, suscipit.</p>
+                    <a href="#">Visit</a>
+                </div>
+                <div class="korni-right">
+                    <img src="assets/travel.png" alt="Travel picture">
+                </div>
+            </div>
         </div>
     </section>
-
-        <!-- <script>
-            const mobileBtn = document.getElementById('mobile-cta')
-            nav = document.querySelector('nav')
-        
-            mobileBtn.addEventListener("click", () => {
-                nav.classList.toggle("show-nav")
-            })
-        </script> -->
 </body>
 </html>

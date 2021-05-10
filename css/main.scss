@@ -87,10 +87,13 @@ section.hero {
         a {
             color: white;
             text-decoration: none;
-            background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+            background: linear-gradient(178.18deg, #fd4c7e -13.56%, #1c0cc7 158.3%);
             border-radius: 100px;
             padding: 1em;
             font-weight: bold;
+            &:hover {
+                background: linear-gradient(178.18deg, #ff7199 -13.56%, #3a2ec7 158.3%);
+            }
         }
     }
 
@@ -104,7 +107,6 @@ section.about-me {
     display: flex;
     justify-content: center;
     .container-about-me {
-        // width: 50%;
         height: 75vh;
         display: block;
         text-align: center;
@@ -141,6 +143,33 @@ section.portfolio {
             font-weight: bold;
             font-size: 4em;
         }
+        .korni {
+            .korni-left {
+                background: rgb(241, 241, 241);
+                border-radius: 25px;
+                p {
+                    margin-bottom: 2em;
+                }
+                a {
+                    color: white;
+                    text-decoration: none;
+                    background: linear-gradient(178.18deg, #fd4c7e -13.56%, #1c0cc7 158.3%);
+                    border-radius: 100px;
+                    padding: 1em 2em 1em 2em;
+                    font-weight: bold;
+                    &:hover {
+                        background: linear-gradient(178.18deg, #ff7199 -13.56%, #3a2ec7 158.3%);
+                    }
+                }
+            }
+            .korni-right {
+                border: solid 1px rgb(241, 241, 241);
+                border-radius: 25px;
+                background: linear-gradient(178.18deg, #ff7199 -13.56%, #3a2ec7 158.3%);
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
 }
 
@@ -169,6 +198,20 @@ section.portfolio {
 
     .container-about-me {
         width: 80%;
+    }
+
+    .korni {
+        display: block;
+        .korni-left {
+            width: 80%;
+            height: 50vh;
+            margin: 0 auto;
+        }
+        .korni-right {
+            width: 80%;
+            height: 50vh;
+            margin: 0 auto 4em auto;
+        }
     }
 
 }
@@ -212,4 +255,21 @@ section.portfolio {
     .container-about-me {
         width: 50%;
     }
+
+    
+
+    .korni {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4em;
+        .korni-left {
+            width: 25%;
+            height: 50vh;
+        }
+        .korni-right {
+            width: 25%;
+            height: 50vh;
+        }
+    }
+
 }
