@@ -31,6 +31,10 @@ body {
   font-weight: bold;
 }
 
+.navbar .container nav ul li a:hover {
+  color: #d1d1d1;
+}
+
 section.hero {
   background-image: url("../assets/background.png");
   background-repeat: no-repeat;
@@ -45,7 +49,6 @@ section.hero {
 section.hero div.container-left {
   display: block;
   text-align: center;
-  margin-right: 3em;
 }
 
 section.hero div.container-left h1 {
@@ -98,13 +101,23 @@ section.about-me .container-about-me img {
 
 section.about-me .container-about-me h1 {
   font-weight: bold;
-  color: violet;
+  color: black;
 }
 
 section.about-me .container-about-me p {
   color: black;
   font-weight: 500;
   margin: 0 2em 0 2em;
+}
+
+section.portfolio .container-portfolio {
+  display: block;
+  text-align: center;
+}
+
+section.portfolio .container-portfolio h1 {
+  font-weight: bold;
+  font-size: 4em;
 }
 
 @media only screen and (max-width: 768px) {
@@ -171,5 +184,9 @@ section.about-me .container-about-me p {
   }
   .container-left {
     margin-top: 5em;
+    margin-right: 3em;
+  }
+  section.about-me .container-about-me {
+    margin: 0em 0 4em 0;
   }
 }

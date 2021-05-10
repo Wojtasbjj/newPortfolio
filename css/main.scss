@@ -26,6 +26,9 @@ body {
                     a {
                         text-decoration: none;
                         font-weight: bold;
+                        &:hover {
+                            color: #d1d1d1;
+                        }
                     }
                 }
             }
@@ -46,7 +49,6 @@ section.hero {
     div.container-left {
         display: block;
         text-align: center;
-        margin-right: 3em;
     
         h1 {
             color: white;
@@ -98,13 +100,24 @@ section.about-me {
 
         h1 {
             font-weight: bold;
-            color: violet;
+            color: black
         }
 
         p {
             color: black;
             font-weight: 500;
             margin: 0 2em 0 2em;
+        }
+    }
+}
+
+section.portfolio {
+    .container-portfolio {
+        display: block;
+        text-align: center;
+        h1 {
+            font-weight: bold;
+            font-size: 4em;
         }
     }
 }
@@ -181,6 +194,13 @@ section.about-me {
     }
     .container-left {
         margin-top: 5em;
+        margin-right: 3em;
+    }
+
+    section.about-me {
+        .container-about-me {
+            margin: 0em 0 4em 0;
+        }
     }
 }
 
