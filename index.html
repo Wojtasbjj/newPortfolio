@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <img id="mobile-cta" src="assets/menu.svg" alt="open mobile menu">
+            <nav class="navigation">
+                <!-- <img src="assets/exit.svg" alt="exit mobile menu"> -->
+                <ul class="primary-nav">
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Stack</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container-left">
+            <h1>Hi, my name is Wojtek</h1>
+            <h2>i'm a web developer</h2>
+            <a href="#">Let's talk</a>
+        </div>
+        <div class="container-right">
+            <img src="assets/human.png" alt="Human with laptop">
+        </div>
+    </section>
+
+    <section class="about-me">
+        <div class="container-about-me">
+            <img src="assets/human2.png" alt="Human with laptop">
+            <h1>About me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, tempore, dolor laborum fuga temporibus ea error explicabo sed minus facere soluta ullam doloribus illo. Tenetur provident temporibus id nulla assumenda.</p>
+        </div>
+    </section>
+
+        <script>
+            const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+        
+            mobileBtn.addEventListener("click", () => {
+                nav.classList.toggle("show-nav")
+            })
+        </script>
+</body>
+</html>
