@@ -68,7 +68,7 @@ section.hero {
     background-position: top;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
 
@@ -113,7 +113,7 @@ section.about-me {
     justify-content: center;
     .container-about-me {
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        height: 75vh;
+        height: fit-content;
         display: block;
         text-align: center;
         border: double 1px transparent;
@@ -136,7 +136,7 @@ section.about-me {
         p {
             color: black;
             font-weight: 500;
-            margin: 0 2em 0 2em;
+            padding: 0 2em 2em 2em;
         }
     }
 }
@@ -148,13 +148,14 @@ section.portfolio {
         h1 {
             font-weight: bold;
             font-size: 4em;
+            text-decoration: underline magenta;
         }
         .korni {
             .korni-left {
                 background: rgb(241, 241, 241);
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
                 p {
-                    margin-bottom: 2em;
+                    padding: 0 2em;
                 }
                 a {
                     color: white;
@@ -215,10 +216,19 @@ section.portfolio {
 }
 
 section.stack {
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 4em;
+        text-decoration: underline magenta;
+    }
     .container-stack {
+        display: block;
+        text-align: center;
         .dev, .ui, .teamwork {
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        height: 75vh;
+        height: fit-content;
         display: block;
         text-align: center;
         border: double 1px transparent;
@@ -238,6 +248,17 @@ section.stack {
         }
         }
     }
+}
+
+section.contact {
+    background-image: url('../assets/background_bottom.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 768px) { //mobile screen
@@ -324,7 +345,6 @@ section.stack {
 
 @media only screen and (min-width: 768px) { //bigger than mobile
     .container {
-        display: flex;
         img {
             display: none;
         }
@@ -415,7 +435,6 @@ section.stack {
     }
     
     section.stack {
-        display: block;
         .container-stack {
             display: flex;
             justify-content: space-between;

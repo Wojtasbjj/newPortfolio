@@ -68,7 +68,7 @@ section.hero {
   background-position: top;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   justify-content: center;
 }
@@ -116,7 +116,7 @@ section.about-me {
 
 section.about-me .container-about-me {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  height: 75vh;
+  height: fit-content;
   display: block;
   text-align: center;
   border: double 1px transparent;
@@ -139,7 +139,7 @@ section.about-me .container-about-me h1 {
 section.about-me .container-about-me p {
   color: black;
   font-weight: 500;
-  margin: 0 2em 0 2em;
+  padding: 0 2em 2em 2em;
 }
 
 section.portfolio .container-portfolio {
@@ -150,6 +150,7 @@ section.portfolio .container-portfolio {
 section.portfolio .container-portfolio h1 {
   font-weight: bold;
   font-size: 4em;
+  text-decoration: underline magenta;
 }
 
 section.portfolio .container-portfolio .korni .korni-left {
@@ -158,7 +159,7 @@ section.portfolio .container-portfolio .korni .korni-left {
 }
 
 section.portfolio .container-portfolio .korni .korni-left p {
-  margin-bottom: 2em;
+  padding: 0 2em;
 }
 
 section.portfolio .container-portfolio .korni .korni-left a {
@@ -222,9 +223,22 @@ section.portfolio .container-portfolio .training .training-right a:hover {
   background: linear-gradient(178.18deg, #ff7199 -13.56%, #3a2ec7 158.3%);
 }
 
+section.stack h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 4em;
+  text-decoration: underline magenta;
+}
+
+section.stack .container-stack {
+  display: block;
+  text-align: center;
+}
+
 section.stack .container-stack .dev, section.stack .container-stack .ui, section.stack .container-stack .teamwork {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  height: 75vh;
+  height: fit-content;
   display: block;
   text-align: center;
   border: double 1px transparent;
@@ -241,6 +255,17 @@ section.stack .container-stack .dev p, section.stack .container-stack .ui p, sec
 section.stack .container-stack .dev img, section.stack .container-stack .ui img, section.stack .container-stack .teamwork img {
   max-width: 50%;
   height: auto;
+}
+
+section.contact {
+  background-image: url("../assets/background_bottom.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -314,9 +339,6 @@ section.stack .container-stack .dev img, section.stack .container-stack .ui img,
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    display: flex;
-  }
   .container img {
     display: none;
   }
@@ -390,9 +412,6 @@ section.stack .container-stack .dev img, section.stack .container-stack .ui img,
   }
   .training .training-right p {
     padding: 2em;
-  }
-  section.stack {
-    display: block;
   }
   section.stack .container-stack {
     display: flex;
