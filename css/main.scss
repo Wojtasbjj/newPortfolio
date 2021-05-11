@@ -82,10 +82,11 @@ section.hero {
             font-weight: bold;
         }
 
-        h2 {
+        p {
             color: white;
-            font-size: 3em;
-            margin-top: -1em;
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: -1.5em;
         }
 
         a {
@@ -175,7 +176,7 @@ section.portfolio {
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
                 img {
                     width: 70%;
-                    height: 70%;
+                    height: auto;
                 }
             }
         }
@@ -209,6 +210,32 @@ section.portfolio {
                     }
                 }
             }
+        }
+    }
+}
+
+section.stack {
+    .container-stack {
+        .dev, .ui, .teamwork {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        height: 75vh;
+        display: block;
+        text-align: center;
+        border: double 1px transparent;
+        border-radius: 30px;
+        background-image: linear-gradient(white, white), 
+                          linear-gradient(to right, #FD749B -13.56%, #281AC8 158.3%);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+
+        p {
+            padding: 0 2em 0 2em;
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+        }
         }
     }
 }
@@ -283,6 +310,16 @@ section.portfolio {
         }
     }
 
+    section.stack {
+        .container-stack {
+            display: block;
+
+            .dev, .ui, .teamwork {
+                width: 80%;
+                margin: 2em auto;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) { //bigger than mobile
@@ -373,6 +410,21 @@ section.portfolio {
 
             p {
                 padding: 2em;
+            }
+        }
+    }
+    
+    section.stack {
+        display: block;
+        .container-stack {
+            display: flex;
+            justify-content: space-between;
+            margin: 2em;
+            .dev, .ui, .teamwork {
+                width: 30%;
+                img {
+                    margin: 1em;
+                }
             }
         }
     }

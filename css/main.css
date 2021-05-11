@@ -84,10 +84,11 @@ section.hero div.container-left h1 {
   font-weight: bold;
 }
 
-section.hero div.container-left h2 {
+section.hero div.container-left p {
   color: white;
-  font-size: 3em;
-  margin-top: -1em;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: -1.5em;
 }
 
 section.hero div.container-left a {
@@ -183,7 +184,7 @@ section.portfolio .container-portfolio .korni .korni-right {
 
 section.portfolio .container-portfolio .korni .korni-right img {
   width: 70%;
-  height: 70%;
+  height: auto;
 }
 
 section.portfolio .container-portfolio .training .training-left {
@@ -219,6 +220,27 @@ section.portfolio .container-portfolio .training .training-right a {
 
 section.portfolio .container-portfolio .training .training-right a:hover {
   background: linear-gradient(178.18deg, #ff7199 -13.56%, #3a2ec7 158.3%);
+}
+
+section.stack .container-stack .dev, section.stack .container-stack .ui, section.stack .container-stack .teamwork {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  height: 75vh;
+  display: block;
+  text-align: center;
+  border: double 1px transparent;
+  border-radius: 30px;
+  background-image: linear-gradient(white, white), linear-gradient(to right, #FD749B -13.56%, #281AC8 158.3%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+section.stack .container-stack .dev p, section.stack .container-stack .ui p, section.stack .container-stack .teamwork p {
+  padding: 0 2em 0 2em;
+}
+
+section.stack .container-stack .dev img, section.stack .container-stack .ui img, section.stack .container-stack .teamwork img {
+  max-width: 50%;
+  height: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -281,6 +303,13 @@ section.portfolio .container-portfolio .training .training-right a:hover {
   }
   .training .training-right h3 {
     padding-top: 2em;
+  }
+  section.stack .container-stack {
+    display: block;
+  }
+  section.stack .container-stack .dev, section.stack .container-stack .ui, section.stack .container-stack .teamwork {
+    width: 80%;
+    margin: 2em auto;
   }
 }
 
@@ -361,5 +390,19 @@ section.portfolio .container-portfolio .training .training-right a:hover {
   }
   .training .training-right p {
     padding: 2em;
+  }
+  section.stack {
+    display: block;
+  }
+  section.stack .container-stack {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+  }
+  section.stack .container-stack .dev, section.stack .container-stack .ui, section.stack .container-stack .teamwork {
+    width: 30%;
+  }
+  section.stack .container-stack .dev img, section.stack .container-stack .ui img, section.stack .container-stack .teamwork img {
+    margin: 1em;
   }
 }
