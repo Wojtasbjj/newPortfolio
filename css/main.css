@@ -257,7 +257,7 @@ section.stack .container-stack .dev img, section.stack .container-stack .ui img,
   height: auto;
 }
 
-section.contact {
+section.footer {
   background-image: url("../assets/background_bottom.png");
   background-repeat: no-repeat;
   background-position: top;
