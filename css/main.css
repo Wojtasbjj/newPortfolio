@@ -150,7 +150,6 @@ section.portfolio .container-portfolio {
 section.portfolio .container-portfolio h1 {
   font-weight: bold;
   font-size: 4em;
-  text-decoration: underline magenta;
 }
 
 section.portfolio .container-portfolio .korni .korni-left {
@@ -159,7 +158,7 @@ section.portfolio .container-portfolio .korni .korni-left {
 }
 
 section.portfolio .container-portfolio .korni .korni-left p {
-  padding: 0 2em;
+  padding: 2em;
 }
 
 section.portfolio .container-portfolio .korni .korni-left a {
@@ -167,7 +166,7 @@ section.portfolio .container-portfolio .korni .korni-left a {
   text-decoration: none;
   background: linear-gradient(178.18deg, #fd4c7e -13.56%, #1c0cc7 158.3%);
   border-radius: 100px;
-  padding: 1em 2em 1em 2em;
+  padding: 1em 2em;
   font-weight: bold;
 }
 
@@ -215,7 +214,7 @@ section.portfolio .container-portfolio .training .training-right a {
   text-decoration: none;
   background: linear-gradient(178.18deg, #fd4c7e -13.56%, #1c0cc7 158.3%);
   border-radius: 100px;
-  padding: 1em 2em 1em 2em;
+  padding: 1em 2em;
   font-weight: bold;
 }
 
@@ -228,7 +227,6 @@ section.stack h1 {
   justify-content: center;
   font-weight: bold;
   font-size: 4em;
-  text-decoration: underline magenta;
 }
 
 section.stack .container-stack {
@@ -248,6 +246,10 @@ section.stack .container-stack .dev, section.stack .container-stack .ui, section
   background-clip: content-box, border-box;
 }
 
+section.stack .container-stack .dev img, section.stack .container-stack .ui img, section.stack .container-stack .teamwork img {
+  margin: 1em;
+}
+
 section.stack .container-stack .dev p, section.stack .container-stack .ui p, section.stack .container-stack .teamwork p {
   padding: 0 2em 0 2em;
 }
@@ -257,15 +259,91 @@ section.stack .container-stack .dev img, section.stack .container-stack .ui img,
   height: auto;
 }
 
+section.contact {
+  display: block;
+  margin: 10em auto 0 auto;
+  text-align: center;
+}
+
+section.contact h1 {
+  font-size: 4em;
+}
+
+section.contact button {
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(178.18deg, #fd4c7e -13.56%, #1c0cc7 158.3%);
+  border-radius: 100px;
+  border: none;
+  padding: 1em 2em;
+  font-weight: bold;
+}
+
+section.contact button:hover {
+  background: linear-gradient(178.18deg, #ff7199 -13.56%, #3a2ec7 158.3%);
+}
+
+section.contact input, section.contact textarea {
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+section.contact input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: .8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
 section.footer {
   background-image: url("../assets/background_bottom.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   width: 100%;
-  height: 70vh;
   display: flex;
   justify-content: center;
+}
+
+section.footer .container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+section.footer .container-footer .tel, section.footer .container-footer .linkedin, section.footer .container-footer .github, section.footer .container-footer .cv {
+  width: 6em;
+  height: 6em;
+  margin: 0 1em 1em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.footer .container-footer .tel:hover img, section.footer .container-footer .linkedin:hover img, section.footer .container-footer .github:hover img, section.footer .container-footer .cv:hover img {
+  width: 60%;
+}
+
+section.footer .container-footer .tel img, section.footer .container-footer .linkedin img, section.footer .container-footer .github img, section.footer .container-footer .cv img {
+  width: 50%;
+  height: auto;
+  transition: all .5s;
+}
+
+section.footer .container-footer .tel h1, section.footer .container-footer .linkedin h1, section.footer .container-footer .github h1, section.footer .container-footer .cv h1 {
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -336,6 +414,12 @@ section.footer {
     width: 80%;
     margin: 2em auto;
   }
+  section.contact {
+    width: 80%;
+  }
+  section.footer {
+    height: 30vh;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -353,9 +437,11 @@ section.footer {
   }
   .container .navigation ul li a {
     color: white;
+    transition: all .5s;
   }
   .container .navigation ul li a:hover {
     color: #eeeded;
+    font-size: 1.5em;
   }
   .container-left {
     margin-top: 5em;
@@ -363,9 +449,12 @@ section.footer {
   }
   section.about-me .container-about-me {
     margin: 0em 0 4em 0;
-  }
-  .container-about-me {
     width: 50%;
+    transition: width .5s;
+  }
+  section.about-me .container-about-me:hover {
+    background: #f7f7f7;
+    width: 52%;
   }
   .korni {
     display: flex;
@@ -377,6 +466,10 @@ section.footer {
     height: 70vh;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    transition: width .5s;
+  }
+  .korni .korni-left:hover {
+    width: 45%;
   }
   .korni .korni-left h3 {
     margin: 2em 0 2em 0;
@@ -389,6 +482,7 @@ section.footer {
     height: 70vh;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    transition: width .5s;
   }
   .training {
     display: flex;
@@ -400,12 +494,17 @@ section.footer {
     height: 70vh;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    transition: width .5s;
   }
   .training .training-right {
     width: 40%;
     height: 70vh;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    transition: width .5s;
+  }
+  .training .training-right:hover {
+    width: 45%;
   }
   .training .training-right h3 {
     margin: 2em 0 2em 0;
@@ -420,8 +519,16 @@ section.footer {
   }
   section.stack .container-stack .dev, section.stack .container-stack .ui, section.stack .container-stack .teamwork {
     width: 30%;
+    transition: width .5s;
   }
-  section.stack .container-stack .dev img, section.stack .container-stack .ui img, section.stack .container-stack .teamwork img {
-    margin: 1em;
+  section.stack .container-stack .dev:hover, section.stack .container-stack .ui:hover, section.stack .container-stack .teamwork:hover {
+    width: 32%;
+    background: #f7f7f7;
+  }
+  section.contact {
+    width: 40%;
+  }
+  section.footer {
+    height: 60vh;
   }
 }

@@ -39,7 +39,7 @@
         <div class="container-left">
             <h1>Hi, my name is Wojtek</h1>
             <p>i'm a web developer</p>
-            <a href="#">Let's talk</a>
+            <a href="#contact">Let's talk</a>
         </div>
         <div class="container-right">
             <img src="assets/human.png" alt="Human with laptop">
@@ -105,16 +105,31 @@
     </section>
 
     <section id="contact" class="contact">
+        <h1>Contact me!</h1>
         <form class="contact-form" action="contact-form-handler.php" method="POST">
             <input type="text" name="name" placeholder="Name">
-            <input type="text" name="email" placeholder="e-mail">
-            <textarea name="message" placeholder="message" cols="30" rows="10"></textarea>
+            <input type="text" name="email" placeholder="E-mail">
+            <textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
             <button type="submit" name="submit">Send</button>
         </form>
     </section>
 
     <section class="footer">
-
+        <div class="container-footer">
+            <div @click="showTel = !showTel" class="tel">
+                <img v-if="showTel === false" src="assets/footer_ico/phone.png" alt="Smartphone icon">
+                <h1 v-if="showTel">732 900 645</h1>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/wojciech-gajda-273ba41b6/" target="_blank"><img src="assets/footer_ico/linkedin.png" alt="LinkedIn icon"></a>
+            </div>
+            <div class="github">
+                <a href="https://github.com/Wojtasbjj" target="_blank"><img src="assets/footer_ico//githubico.png" alt="Github icon"></a>
+            </div>
+            <div class="github">
+                <a href="https://wojciechgajda.pl/CV_WojciechGajda.pdf" target="_blank"><img src="assets/footer_ico//cv.png" alt="Github icon"></a>
+            </div>
+        </div>
     </section>
 </body>
 </html>

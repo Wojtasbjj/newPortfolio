@@ -148,21 +148,20 @@ section.portfolio {
         h1 {
             font-weight: bold;
             font-size: 4em;
-            text-decoration: underline magenta;
         }
         .korni {
             .korni-left {
                 background: rgb(241, 241, 241);
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
                 p {
-                    padding: 0 2em;
+                    padding: 2em;
                 }
                 a {
                     color: white;
                     text-decoration: none;
                     background: linear-gradient(178.18deg, #fd4c7e -13.56%, #1c0cc7 158.3%);
                     border-radius: 100px;
-                    padding: 1em 2em 1em 2em;
+                    padding: 1em 2em;
                     font-weight: bold;
                     &:hover {
                         background: linear-gradient(178.18deg, #ff7199 -13.56%, #3a2ec7 158.3%);
@@ -204,7 +203,7 @@ section.portfolio {
                     text-decoration: none;
                     background: linear-gradient(178.18deg, #fd4c7e -13.56%, #1c0cc7 158.3%);
                     border-radius: 100px;
-                    padding: 1em 2em 1em 2em;
+                    padding: 1em 2em;
                     font-weight: bold;
                     &:hover {
                         background: linear-gradient(178.18deg, #ff7199 -13.56%, #3a2ec7 158.3%);
@@ -221,7 +220,6 @@ section.stack {
         justify-content: center;
         font-weight: bold;
         font-size: 4em;
-        text-decoration: underline magenta;
     }
     .container-stack {
         display: block;
@@ -238,6 +236,10 @@ section.stack {
         background-origin: border-box;
         background-clip: content-box, border-box;
 
+        img {
+            margin: 1em;
+        }
+
         p {
             padding: 0 2em 0 2em;
         }
@@ -250,15 +252,86 @@ section.stack {
     }
 }
 
+section.contact {
+    display: block;
+    margin: 10em auto 0 auto;
+    text-align: center;
+    h1 {
+        font-size: 4em;
+    }
+    button {
+        color: white;
+                    text-decoration: none;
+                    background: linear-gradient(178.18deg, #fd4c7e -13.56%, #1c0cc7 158.3%);
+                    border-radius: 100px;
+                    border: none;
+                    padding: 1em 2em;
+                    font-weight: bold;
+                    &:hover {
+                        background: linear-gradient(178.18deg, #ff7199 -13.56%, #3a2ec7 158.3%);
+                    }
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: .8em;
+        margin-bottom: 1em;
+        border-radius: .3em;
+        border: 1px solid gray;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        background-color: var(--primary-color);
+        color: white;
+        font-weight: bold;
+        font-size: 1.3em;
+        border: none;
+        margin-bottom: 5em;
+        border-radius: 5em;
+        display: inline-block;
+        padding: .8em 2em;
+        width: unset;
+        cursor: pointer;
+    }
+}
+
 section.footer {
+
     background-image: url('../assets/background_bottom.png');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     width: 100%;
-    height: 70vh;
     display: flex;
     justify-content: center;
+    .container-footer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        .tel, .linkedin, .github, .cv {
+            width: 6em;
+            height: 6em;
+            margin: 0 1em 1em;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                img {
+                    width: 60%;
+                }
+            }
+            img {
+                width: 50%;
+                height: auto;
+                transition: all .5s;
+            }
+            h1 {
+                color: white;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) { //mobile screen
@@ -341,6 +414,14 @@ section.footer {
             }
         }
     }
+
+    section.contact {
+        width: 80%;
+    }
+
+    section.footer {
+        height: 30vh;
+    }
 }
 
 @media only screen and (min-width: 768px) { //bigger than mobile
@@ -359,8 +440,10 @@ section.footer {
 
                     a {
                         color: white;
+                        transition: all .5s;
                         &:hover {
                             color: #eeeded;
+                            font-size: 1.5em;
                         }
                     }
                 }
@@ -375,11 +458,15 @@ section.footer {
     section.about-me {
         .container-about-me {
             margin: 0em 0 4em 0;
-        }
-    }
+            width: 50%;
+            transition: width .5s;
 
-    .container-about-me {
-        width: 50%;
+            &:hover {
+                background: rgb(247, 247, 247);
+                width: 52%;
+            }
+
+        }
     }
 
     
@@ -393,6 +480,11 @@ section.footer {
             height: 70vh;
             border-top-left-radius: 25px;
             border-bottom-left-radius: 25px;
+            transition: width .5s;
+            &:hover {
+                width: 45%;
+            }
+
             h3 {
                 margin: 2em 0 2em 0;
             }
@@ -406,6 +498,7 @@ section.footer {
             height: 70vh;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
+            transition: width .5s;
         }
     }
 
@@ -418,12 +511,17 @@ section.footer {
             height: 70vh;
             border-top-left-radius: 25px;
             border-bottom-left-radius: 25px; 
+            transition: width .5s;
         }
         .training-right {
             width: 40%;
             height: 70vh;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
+            transition: width .5s;
+            &:hover {
+                width: 45%;
+            }
             h3 {
                 margin: 2em 0 2em 0;
             }
@@ -441,11 +539,21 @@ section.footer {
             margin: 2em;
             .dev, .ui, .teamwork {
                 width: 30%;
-                img {
-                    margin: 1em;
+                transition: width .5s;
+                &:hover {
+                    width: 32%;
+                    background: rgb(247, 247, 247);
                 }
             }
         }
+    }
+
+    section.contact {
+        width: 40%;
+    }
+
+    section.footer {
+        height: 60vh;
     }
 
 }
